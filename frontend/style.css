@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #004f8c;
+}
+
+nav button {
+  flex: 1;
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #005fa3;
+}
+
+main {
+  padding: 20px;
+}
+
+input, button {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #eef;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
+
+.valor-alto {
+  background: #ffdddd;
+  font-weight: bold;
+}
+
+.extrato-container {
+  margin-top: 15px;
+}
+
+.extrato-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transacao-card {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.transacao-card:hover {
+  transform: scale(1.02);
+}
+
+.transacao-card span {
+  display: block;
+  font-size: 14px;
+}
+
+.transacao-codigo {
+  font-weight: bold;
+  color: #004f8c;
+}
+
+.transacao-valor {
+  font-weight: bold;
+  color: #008000;
+}
+
+.valor-alto .transacao-valor {
+  color: #d10000;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .transacao-card {
+    padding: 10px;
+  }
+
+  .transacao-card span {
+    font-size: 13px;
+  }
+}

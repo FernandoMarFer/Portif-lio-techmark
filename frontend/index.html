@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMarket - Projeto Integrado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>TechMarket - Projeto Integrado</h1></header>
+
+  <nav>
+    <button class="tab" onclick="abrirAba('cadastrar')">Cadastrar Clientes</button>
+    <button class="tab" onclick="abrirAba('parte2')">Parte 2 - API REST</button>
+    <button class="tab" onclick="abrirAba('parte3')">Parte 3 - Extrato</button>
+    <button class="tab" onclick="abrirAba('parte4')">Parte 4 - SQL Procedure</button>
+    <button class="tab" onclick="abrirAba('parte5')">Parte 5 - Validação</button>
+  </nav>
+
+
+  <main>
+    <section id="cadastrar" class="conteudo" style="display:none;">
+      <h2>Cadastrar Cliente</h2>
+      <input type="text" id="nomeCliente" placeholder="Nome do Cliente">
+      <input type="number" id="saldoInicial" placeholder="Saldo Inicial">
+      <button onclick="cadastrarCliente()">Cadastrar</button>
+      <p id="resultadoCadastro"></p>
+
+      <hr>
+      <h3>Lista de Clientes</h3>
+      <button onclick="listarClientes()">Atualizar Lista</button>
+      <table id="tabelaClientes">
+        <thead>
+          <tr><th>ID</th><th>Nome</th><th>Saldo</th><th>Ações</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+
+    <section id="parte2" class="conteudo">
+      <h2>Transferência Bancária</h2>
+      <input type="number" id="origem" placeholder="ID Conta Origem">
+      <input type="number" id="destino" placeholder="ID Conta Destino">
+      <input type="number" id="valor" placeholder="Valor">
+      <button onclick="transferir()">Transferir</button>
+      <p id="resultadoTransferencia"></p>
+    </section>
+
+    <section id="parte3" class="conteudo" style="display:none;">
+      <h2>Extrato Bancário</h2>
+      <button onclick="carregarExtrato()">Atualizar Extrato</button>
+
+      <div class="extrato-container">
+        <div id="loading" style="display:none;">Carregando...</div>
+        <div id="semTransacoes" style="display:none;">Nenhuma transação encontrada.</div>
+
+        <div class="extrato-lista" id="extratoLista"></div>
+      </div>
+    </section>
+
+
+    <section id="parte4" class="conteudo" style="display:none;">
+      <h2>Consulta de Saldo e Transações</h2>
+      <input type="number" id="contaSaldo" placeholder="ID da Conta">
+      <button onclick="consultarSaldo()">Consultar</button>
+      <p id="resultadoSaldo"></p>
+      <ul id="transacoesSaldo"></ul>
+    </section>
+
+    <section id="parte5" class="conteudo" style="display:none;">
+      <h2>Validação de Formulário</h2>
+      <input type="text" id="cpf" placeholder="CPF (11 dígitos)">
+      <input type="date" id="nascimento">
+      <input type="text" id="telefone" placeholder="Telefone (somente números)">
+      <button onclick="validarFormulario()">Validar</button>
+      <p id="resultadoValidacao"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
