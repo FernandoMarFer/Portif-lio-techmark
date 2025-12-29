@@ -56,7 +56,7 @@ async function carregarExtrato() {
       lista.appendChild(card);
     });
   } catch (error) {
-    loading.style.display = 'none';
+    loading.style.display = 'none';a
     alert("Erro ao carregar extrato.");
   }
 }
