@@ -57,7 +57,7 @@ async function carregarExtrato() {
     });
   } catch (error) {
     loading.style.display = 'none';
-    alert("Erro ao carregar extrato.");A
+    alert("Erro ao carregar extrato.");
   }
 }
 
