@@ -79,7 +79,7 @@ tr:nth-child(even) {
 }
 
 .extrato-lista {
-  display: flex;
+  display: flex;a
   flex-direction: column;
   gap: 10px;
 }
