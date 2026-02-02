@@ -2,7 +2,7 @@ const API_URL = "http://localhost:3000/api";
 
 function abrirAba(aba) {
   document.querySelectorAll('.conteudo').forEach(c => c.style.display = 'none');
-  document.getElementById(aba).style.display = 'block';a
+  document.getElementById(aba).style.display = 'block';
 }
 
 
