@@ -7,7 +7,7 @@ function abrirAba(aba) {
 
 
 async function transferir() {
-  const origemId = parseInt(document.getElementById('origem').value);a
+  const origemId = parseInt(document.getElementById('origem').value);
   const destinoId = parseInt(document.getElementById('destino').value);
   const valor = parseFloat(document.getElementById('valor').value);
 
