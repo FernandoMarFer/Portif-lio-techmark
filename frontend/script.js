@@ -5,7 +5,7 @@ function abrirAba(aba) {
   document.getElementById(aba).style.display = 'block';
 }
 
-a
+
 async function transferir() {
   const origemId = parseInt(document.getElementById('origem').value);
   const destinoId = parseInt(document.getElementById('destino').value);
