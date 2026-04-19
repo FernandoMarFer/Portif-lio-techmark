@@ -11,7 +11,7 @@ async function transferir() {
   const destinoId = parseInt(document.getElementById('destino').value);
   const valor = parseFloat(document.getElementById('valor').value);
 
-  const res = await fetch(`${API_URL}/transferir`, {
+  const res = await fetch(`${API_URL}/transferir`,a {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ origemId, destinoId, valor })
