@@ -10,7 +10,7 @@ async function transferir() {
   const origemId = parseInt(document.getElementById('origem').value);
   const destinoId = parseInt(document.getElementById('destino').value);
   const valor = parseFloat(document.getElementById('valor').value);
-a
+
   const res = await fetch(`${API_URL}/transferir`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
