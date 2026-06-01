@@ -82,7 +82,7 @@ async function consultarSaldo() {
 }
 
 
-function validarFormulario() {
+function validarFormulario() {A
   const cpf = document.getElementById('cpf').value;
   const nascimento = document.getElementById('nascimento').value;
   const telefone = document.getElementById('telefone').value;
