@@ -99,7 +99,7 @@ function mostrarErro(msg) {
   document.getElementById('resultadoValidacao').style.color = "red";
 }
 
-function mostrarSucesso(msg) {
+function mostrarSucesso(msg) {a
   document.getElementById('resultadoValidacao').textContent = msg;
   document.getElementById('resultadoValidacao').style.color = "green";
 }
