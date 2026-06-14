@@ -109,7 +109,7 @@ async function cadastrarCliente() {
   const nome = document.getElementById('nomeCliente').value;
   const saldo = document.getElementById('saldoInicial').value;
 
-  const res = await fetch(`${API_URL}/clientes`, {
+  const res = await fetch(`${API_URL}/clientes`, {a
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ nome, saldo })
